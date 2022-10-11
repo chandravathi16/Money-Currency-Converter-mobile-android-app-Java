@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="@string/money_currency_converter"
+        android:textColor="#169EDC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/enter_amount_indian_rupees"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editAmount"
+        app:layout_constraintStart_toStartOf="@+id/editAmount"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="13dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        tools:ignore="LabelFor,MissingConstraints" />
+    <!-- Spinners provide a quick way to select one value from a set of values (dropdown) -->
+    <Spinner
+        android:id="@+id/spinner_dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editAmount"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="7dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/editAmount"
+        app:layout_constraintTop_toBottomOf="@+id/editAmount"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_dropdown"
+        android:layout_marginTop="41dp"
+        android:text="@string/convert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_dropdown"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

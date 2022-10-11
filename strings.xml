@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Money Currency Converter</string>
+    <string name="money_currency_converter">Money Currency Converter</string>
+    <string name="enter_amount_indian_rupees">Enter amount Indian rupees:</string>
+    <string name="convert">convert</string>
+    <string-array name="convert_rupees">
+        <item>US dollar(USD)</item>
+        <item>Singapore Dollar</item>
+        <item>Russian Rubble</item>
+        <item>Sri Lankan Rupee</item>
+        <item>Euro</item>
+        <item>Australian dollar</item>
+        <item>Malaysian Ringgit</item>
+        <item>South African Rand</item>
+    </string-array>
+</resources>
